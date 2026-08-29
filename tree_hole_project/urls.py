@@ -16,9 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from tree_hole.views import home
+from tree_hole import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),
+    path('', views.home, name='home'),
+    path('api/challenges/', views.challenges, name='challenges'),
+    path('api/challenges/create/', views.create_challenge, name='create_challenge'),
+    path('api/challenges/<int:challenge_id>/heart/', views.add_heart, name='add_heart'),
+    path('api/challenges/<int:challenge_id>/blocks/', views.add_block, name='add_block'),
 ]

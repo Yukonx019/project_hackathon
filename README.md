@@ -105,7 +105,8 @@ Fill this section before submitting to Devpost.
 
 | Team member | Contribution |
 | --- | --- |
-| `Name` | `Role / feature delivered` |
+| Ningyu Cao | Stack Establishment |
+| Xiyuan Hu | Idea establishment and UI UX Designer |
 
 ## Licence
 
